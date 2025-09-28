@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="formulario_aluno">
+        <h1>Cadastro</h1>
+
+        <div class="linha_formulario">
+            <label for="nome_input">Nome:</label>
+            <input type="text" id="nome_input" name="Nome" class="txt_input" required>
+        </div>
+
+        <div class="linha_formulario">
+            <label for="ra_input">RA:</label>
+            <input type="number" id="ra_input" name="RA" class="txt_input" required>
+        </div>
+
+        <div class="linha_formulario">
+            <label for="idade_input">Idade:</label>
+            <input type="number" id="idade_input" name="Idade" class="txt_input" required>
+        </div>
+
+        <div class="linha_formulario">
+            <label for="media_input">Média:</label>
+            <input type="number" id="media_input" name="Media" class="txt_input"  max="10" min="0" step="0.01"  required>
+        </div>
+
+        <div id="linha_radio" class="linha_formulario">
+            <label id="linha_sexo">Sexo:</label>
+            <input type="radio" id="sexo_masculino" name="Genero" value="M" checked>
+            <label for="sexo_masculino">Masculino</label>
+            <input type="radio" id="sexo_feminino" name="Genero" value="F">
+            <label for="sexo_feminino">Feminino</label>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+        <button type="button" id="ordenarNome">Ordenar por Nome (crescente)</button>
+        <button type="button" id="ordenarRA">Ordenar por RA (decrescente)</button>
+        <button type="button" id="ordenarAprovados">Ordenar Aprovados e por Nome</button>
+    </form>
+
+    <div id="table_content">
+        <h2>Alunos Cadastrados</h2>
+        <table id="tabelaAlunos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>RA</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                    <th>Média</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody id="listaAlunos">
+                </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

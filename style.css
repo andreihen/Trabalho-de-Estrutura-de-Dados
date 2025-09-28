@@ -1,0 +1,155 @@
+body {
+    background-color: #212731;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+    color: #f0f0f0;
+    font-family: 'Tahoma', sans-serif;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+#formulario_aluno {
+    background-color: #30353e;
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+#formulario_aluno h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#formulario_aluno label {
+    width: 70px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #d0d0d0;
+}
+
+.linha_formulario {
+    justify-content: start;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.txt_input {
+    flex-grow: 1;
+    border-radius: 25px;
+    border: 0px;
+    padding: 12px 15px;
+    background-color: #f0f0f0;
+    color: #212731;
+    font-size: 14px;
+}
+
+#linha_radio {
+    justify-content: flex-start;
+}
+
+#linha_radio label {
+    width: auto;
+    text-transform: none;
+    font-size: 14px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 2px solid #30353e;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    background-color: #26a69a;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+#formulario_aluno button {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #26a69a;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#formulario_aluno button:hover {
+    background-color: #2bbbad;
+}
+
+#table_content {
+    width: 700px;
+    text-align: left;
+}
+
+#table_content h2 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#tabelaAlunos {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    margin-top: 15px;
+}
+
+#tabelaAlunos th {
+    background-color: #30353e;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#tabelaAlunos th:first-child { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+#tabelaAlunos th:last-child { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+
+#tabelaAlunos td {
+    padding: 15px;
+    font-size: 14px;
+}

@@ -27,20 +27,6 @@ CSS3
 
 JavaScript (ES6+)
 
-🚀 Como Executar o Projeto
-Por ser um projeto front-end com JavaScript puro, não é necessário instalar dependências. Basta seguir os passos abaixo:
-
-Clone o repositório:
-
-Bash
-
-git clone https://github.com/seu-usuario/seu-repositorio.git
-Abra a pasta do projeto.
-
-Abra o arquivo index.html no seu navegador de preferência.
-
-Pronto! A aplicação estará funcionando localmente.
-
 🎯 Conceitos Aplicados
 O desenvolvimento deste projeto permitiu aprofundar os seguintes conhecimentos:
 
